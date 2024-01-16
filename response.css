@@ -1,0 +1,151 @@
+@media screen and (max-width:1300px){
+    .header-control{
+        justify-content: space-around;
+        padding: 20px 100px;
+    }
+    .div-icon{
+        padding: 10px 30px;
+    }
+    nav{
+        padding: 0 50px;
+    }
+    .apresentacao{
+        width: 80%;
+        margin: 9vw auto;
+        text-align: center;
+    }
+    .texto-principal{
+        gap: 30px;
+    }
+    .botoes{
+        margin: auto;
+    }
+    .div-foto{
+        margin: 2vw auto;
+    }
+    .foto{
+        width: 38vw;
+        height: 38vw;
+    }
+    .div-foto img{
+        max-height: 55vw;
+    }
+    footer{
+        margin-top: 30vw;
+    }
+    /* pagina sobre */
+    .conhecimento{
+        flex-wrap: wrap;
+    }
+    .conhecimento .instituto{
+        max-width: 100%;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1050px){
+    .foto{
+        width: 42vw;
+        height: 42vw;
+    }
+    .div-foto img{
+        max-height: 65vw;
+    }
+}
+@media screen and (min-width: 951px) {
+    /* criado somente para o botao de baixar curriculo */
+    .desc{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:950px){
+    header{
+        height: 13vh;    
+    }
+    .foto{
+        width: 45vw;
+        height: 45vw;
+    }
+    .div-foto img{
+        max-height: 68vw;
+    }
+    /* pagina sobre */
+    .desc{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 20px;
+        /* background-color: red; */
+        justify-content: center;
+    }
+}
+@media screen and (max-width:775px){
+    .foto{
+        width: 49vw;
+        height: 49vw;
+    }
+    .div-foto img{
+        max-height: 72vw;
+    }
+    /* pagina sobre */
+    .title div{
+        display: none;
+    }
+    .title{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:650px){
+    .botoes{
+        width: 90%;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+    .botoes a{
+        width: calc(100% - 10px);
+    }
+    .foto{
+        width: 70vw;
+        height: 65vw;
+    }
+    .div-foto{
+        width: 80%;
+    }
+    .div-foto img{
+        max-height: 95vw;
+    }
+    footer{
+        margin-top: 52vw;
+    }
+     /* pagina sobre */
+     .instituto span{
+        text-align: center;
+     }
+    .habilidades{
+        align-items: center;
+        text-align: center;
+
+        overflow: hidden;
+    }
+    .title{
+        justify-content: center;
+    }
+    .title h3{
+        font-size: 5vw;
+    }
+    .soft ul{
+        justify-content: center;
+    }
+    .soft ul li{
+        width: auto;
+        max-width: 220px;
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 450px){
+    .header-control{
+        padding: 20px 0;
+    }
+    .apresentacao{
+            margin-top: 12vw;
+    }
+}
