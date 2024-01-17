@@ -25,11 +25,17 @@ html{
         font-size: 1rem;
         line-height: 1.1rem;
     }
+    .card .texto h3{
+        font-size: 1.2rem;
+    }
+    .card{
+        padding: 70px 20px;
+    }
 }
 @media screen and (max-width:600px) {
     .card{
         width: 90%;
-        overflow: hidden;
+        overflow:scroll;
     }
 }
 @media screen and (max-width:1300px){
@@ -72,5 +78,8 @@ html{
 @media screen and (max-width: 450px){
     .header-control{
         padding: 20px 0;
+    }
+    .card{
+        padding: 70px 20px;
     }
 }
