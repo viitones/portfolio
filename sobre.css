@@ -21,7 +21,7 @@ html{
 
 header{
     display: flex;
-    height: 10vh;
+    padding: 2vh 0;
     /* background-color: red; */
 }
 
@@ -93,7 +93,6 @@ main h2{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 3px 3px 6px #383b3f44;;
-
 }
 
 .bloco1{

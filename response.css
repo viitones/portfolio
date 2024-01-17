@@ -1,3 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-height:630px){
+    header{
+        margin-bottom: 3vw;
+    }
+}
 @media screen and (max-width:1300px){
     .header-control{
         justify-content: space-around;
