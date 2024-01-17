@@ -35,7 +35,7 @@ html{
 @media screen and (max-width:600px) {
     .card{
         width: 90%;
-        overflow:scroll;
+        /* overflow:scroll; */
     }
 }
 @media screen and (max-width:1300px){
