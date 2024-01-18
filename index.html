@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="header-control control-width">
-            <a href="#" class="div-icon">
+            <a href="#" id="topo" class="div-icon">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="#1e30f3" class="bi bi-code-slash" viewBox="0 0 16 16">
                         <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
@@ -28,7 +28,7 @@
             
             <nav>
                 <a href="#">Início</a>
-                <a href="/sobre.html#sobre">Sobre</a>
+                <a href="/sobre.html#sobre">Formação</a>
                 <a href="/projetos.html#projetos">Projetos</a>
             </nav>
         </div>
@@ -163,6 +163,11 @@
         </div>
     </main>
     <footer>
+        <a href="#topo" class="subir-topo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+            </svg>
+        </a>
         <div class="control-width control-footer">
             <h3 id="sobre">Sobre Mim</h3>
             <p class="ap">Meu nome é Victor e sou um futuro Dev Full Stack</p>
@@ -178,11 +183,15 @@
                 trabalho bem de forma independente e aprecio um ótimo trabalho em equipe e sempre disposto a aprender coisas novas.
             </p>
             <div class="redes">
-               <a href="https://www.linkedin.com/in/victor-hugo-s-martins-7b575716a/" class="mask1" target="_blank"></a>
-               <a href="https://github.com/viitones" target="_blank" class="mask2"></a>
-               <a href="https://wa.me/5561991967710" class="mask3" target="_blank"></a>
+               <a href="https://www.linkedin.com/in/victor-hugo-s-martins-7b575716a/" class="mask mask1" target="_blank"></a>
+               <a href="https://github.com/viitones" target="_blank" class="mask mask2"></a>
+               <a href="https://wa.me/5561991967710" class="mask mask3" target="_blank"></a>
             </div>
         </div>
     </footer>
+    <script>window.addEventListener("scroll", function(){
+        let scroll = document.querySelector(".subir-topo")
+            scroll.classList.toggle("active", window.scrollY > 250)
+    })</script>
 </body>
 </html>

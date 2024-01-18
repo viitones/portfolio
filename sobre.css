@@ -118,6 +118,7 @@ main h2{
     color: #fff;
 
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     padding: 17px 55px;
@@ -155,6 +156,7 @@ main h2{
     flex-direction: column;
     gap: 7px;
     border-radius: 12px;
+    text-align: center;
 }
 
 .instituto span{
@@ -243,7 +245,35 @@ main h2{
     cursor: default;
     /* transition: .115s ease-in-out; */
 }
+/* botao */
+.subir-topo{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(350deg, #1e30f3 0%, #e21e80 100%);
+    box-shadow: 2px 2px 6px 1px #383b3f34;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    right: 50px;
+    bottom: 50px;
+    z-index: 999;
 
-/* .soft ul li:hover{
-    background-color: rgba(231, 231, 231, 0.575);
-} */
+    visibility: hidden;
+    opacity: 0;
+    transition: .35s ease-in-out;
+}
+
+.subir-topo.active{
+    opacity: 1;
+    visibility: visible;
+}
+.subir-topo svg{
+    width: 70%;
+    fill: #fff;
+    font-weight: bold;
+}
+.subir-topo:hover{
+    transform: rotateZ(360deg);
+}

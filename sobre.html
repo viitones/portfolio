@@ -18,7 +18,7 @@
     
     <header>
         <div class="header-control control-width">
-            <a href="index.html" class="div-icon">
+            <a href="index.html" id="topo" class="div-icon">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="#1e30f3" class="bi bi-code-slash" viewBox="0 0 16 16">
                         <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
@@ -29,18 +29,18 @@
             
             <nav>
                 <a href="index.html">Início</a>
-                <a href="#">Sobre</a>
+                <a href="#">Formação</a>
                 <a href="/projetos.html#projetos">Projetos</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <h2 id="sobre">Sobre</h2>
+        <h2 id="sobre">Formação</h2>
         <div class="bloco1 control-width">
             <div class="desc">
                 <h3>Educação</h3>
-                <a href="/download/Curriculo - Victor Hugo da Silva Martins.pdf" download>Baixar Currículo</a>
+                <a href="/download/Curriculo - Victor Hugo da Silva Martins.pdf" download><img src="/content/file-earmark-arrow-down-fill.svg" alt=""> Baixar Currículo</a>
             </div>
             <div class="conhecimento">
                 <div class="instituto">
@@ -120,6 +120,14 @@
             </div>
         </div>
     </main>
-
+    <a href="#topo" class="subir-topo">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+        </svg>
+    </a>
+    <script>window.addEventListener("scroll", function(){
+        let scroll = document.querySelector(".subir-topo")
+            scroll.classList.toggle("active", window.scrollY > 250)
+    })</script>
 </body>
 </html>

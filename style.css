@@ -168,7 +168,7 @@ main{
 
 .botoes a:nth-child(1):hover{
     border: 1px solid #1826c2;
-    background-color: #1a29cf;
+    background-color: #1a28c4;
 }
 
 .botoes a:nth-of-type(2){
@@ -246,6 +246,7 @@ main{
 footer{
     background-color: rgb(248, 249, 250);
     margin-top: 10vw;
+    /* position: relative; */
 }
 
 .control-footer{
@@ -253,7 +254,6 @@ footer{
     text-align: center;
     width: 100%;
     max-width: 50%;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -283,12 +283,18 @@ footer{
     display: flex;
     justify-content: center;
     gap: 30px;
+    position: relative;
 }
 
 .redes a{
     background-image: -webkit-linear-gradient(150deg, #1e30f3 0%, #e21e80 100%);
     width: 35px;
     height: 35px;
+    transition: .4s ease-in-out;
+}
+
+.redes a:hover{
+    transform: rotateY(360deg);
 }
 
 .redes .mask1{
@@ -319,4 +325,36 @@ footer{
     mask-repeat: no-repeat;
     -webkit-mask-size: cover;
     mask-size: cover;
+}
+/* botao */
+.subir-topo{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(150deg, #1e30f3 0%, #e21e80 100%);
+    box-shadow: 2px 2px 6px 1px #383b3f34;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    right: 50px;
+    bottom: 50px;
+    z-index: 999;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .35s ease-in-out;
+}
+
+.subir-topo.active{
+    opacity: 1;
+    visibility: visible;
+}
+.subir-topo svg{
+    width: 70%;
+    fill: #fff;
+    font-weight: bold;
+}
+.subir-topo:hover{
+    transform: rotateZ(360deg);
 }

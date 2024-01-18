@@ -18,7 +18,7 @@
     
     <header>
         <div class="header-control control-width">
-            <a href="#" class="div-icon">
+            <a href="/index.html" id="topo" class="div-icon">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="#1e30f3" class="bi bi-code-slash" viewBox="0 0 16 16">
                         <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
@@ -29,7 +29,7 @@
             
             <nav>
                 <a href="index.html">Início</a>
-                <a href="/sobre.html#sobre">Sobre</a>
+                <a href="/sobre.html#sobre">Formação</a>
                 <a href="#">Projetos</a>
             </nav>
         </div>
@@ -47,11 +47,11 @@
                     </p>
                     <p class="link">
                         <a href="https://github.com/viitones/Medic-Life" target="_blank">Repositório</a>
-                        <a href="https://medic-life-m2sg6kyqv-hugos-projects-6ecc346d.vercel.app/" target="_blank">Link do projeto</a>
+                        <a href="https://medic-life.vercel.app/" target="_blank">Link do projeto</a>
                     </p>
                 </div>
                 <div class="capa-projeto">
-                    <a href="https://medic-life-m2sg6kyqv-hugos-projects-6ecc346d.vercel.app/" target="_blank">
+                    <a href="https://medic-life.vercel.app/" target="_blank">
                         <img src="/content/clinica.png" alt="">
                     </a>
                 </div>
@@ -59,10 +59,10 @@
 
             <div class="card">
                 <div class="texto">
-                    <h3>Agência de viagem</h3>
+                    <h3>Agência de Viagem</h3>
                     <p>
                         A proposta desse projeto foi criar o front-end de uma página web dinâmica utilizando conceitos de formulários 
-                        para enviar dados do front-end para o back-end (disponibilizado ja feito pela plataforma).
+                        para enviar dados do front-end para o back-end (disponibilizado pela plataforma).
                     </p>
                     <p class="link">
                         <a href="https://github.com/viitones/Agencia-de-viagem" target="_blank">Repositório</a>
@@ -79,11 +79,19 @@
     </main>
 
     <footer>
+        <a href="#topo" class="subir-topo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+            </svg>
+        </a>
         <div class="control-width">
             <h3>Vamos programar juntos</h3>
             <a href="https://wa.me/5561991967710" target="_blank">Entre em contato</a>
         </div>
     </footer>
-
+    <script>window.addEventListener("scroll", function(){
+        let scroll = document.querySelector(".subir-topo")
+            scroll.classList.toggle("active", window.scrollY > 50)
+    })</script>
 </body>
 </html>

@@ -1,6 +1,17 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    width: .4rem;
+}
+::-webkit-scrollbar-thumb{
+    background: -webkit-linear-gradient(150deg, #1e30f3 0%, #e21e80 100%);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-track{
+    /* background: -webkit-linear-gradient(150deg, #1e30f3 0%, #e21e80 100%); */
+    margin-block: 5px;
+}
 @media screen and (max-height:630px){
     header{
         margin-bottom: 3vw;
@@ -49,6 +60,9 @@ html{
         max-width: 100%;
         align-items: center;
     }
+    .instituto span, .instituto p, .instituto a{
+        font-size: 1.2rem;
+    }
 }
 @media screen and (max-width:1050px){
     .foto{
@@ -57,6 +71,22 @@ html{
     }
     .div-foto img{
         max-height: 65vw;
+    }
+    .control-footer{
+        max-width: 80%;
+    }
+    .res{
+        text-align: justify;
+    }
+    /* pagina sobre */
+    main h2{
+        font-size: 3.2rem;
+    }
+    .desc h3{
+        font-size: 2.1rem;
+    }
+    .desc a{
+        padding: 17px 50px;
     }
 }
 @media screen and (min-width: 951px) {
@@ -78,11 +108,12 @@ html{
     }
     /* pagina sobre */
     .desc{
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
-        padding: 0 20px;
-        /* background-color: red; */
-        justify-content: center;
+    }
+    .desc a{
+        padding: 17px 20px;
     }
 }
 @media screen and (max-width:775px){
@@ -101,6 +132,12 @@ html{
         text-align: center;
         flex-wrap: wrap;
     }
+    .desc{
+        justify-content: space-between;
+    }
+    .bloco1, .habilidades{
+        width: 70%;
+    }
 }
 @media screen and (max-width:650px){
     .botoes{
@@ -110,6 +147,7 @@ html{
     }
     .botoes a{
         width: calc(100% - 10px);
+        margin: auto;
     }
     .foto{
         width: 70vw;
@@ -125,6 +163,9 @@ html{
         margin-top: 52vw;
     }
      /* pagina sobre */
+     .desc{
+        justify-content: center;
+     }
      .instituto span{
         text-align: center;
      }
@@ -155,5 +196,8 @@ html{
     }
     .apresentacao{
             margin-top: 12vw;
+    }
+    .soft ul li{
+        width: 150px;
     }
 }
