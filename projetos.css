@@ -42,6 +42,9 @@ header{
 .div-icon div{
     width: 30px;
 }
+#topo{
+    outline: none;
+}
 
 .div-icon div svg{
     width: 100%;
@@ -82,12 +85,11 @@ main{
     gap: 3vw;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: rgb(248, 249, 250);
 }
 main h2{
     font-size: 3.5rem;
-    background: linear-gradient(-315deg, #1e30f3 0%, #e21e80 100%);
+    background: -webkit-linear-gradient(-315deg, #1e30f3 0%, #e21e80 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 3px 3px 6px #383b3f44;;
@@ -117,12 +119,14 @@ main h2{
 .card .texto h3{
     font-size: 2rem;
     margin-bottom: 15px;
+    color: #212529;
 }
 .card .texto p{
     font-size: 1.25rem;
     line-height: 1.7rem;
     text-align: justify;
     padding-right: 20px;
+    color: #34393d;
 }
 .card .texto .link{
     display: flex;
@@ -147,7 +151,7 @@ main h2{
 }
 
 footer{
-    background: linear-gradient(-250deg, #1e30f3 0%, #e21e80 100%);
+    background: -webkit-linear-gradient(-315deg, #1e30f3 0%, #e21e80 100%);
     padding: 100px 0;
 }
 footer div{
@@ -178,7 +182,7 @@ footer div a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: -webkit-linear-gradient(-350deg, #1e30f3 0%, #e21e80 100%);
+    background: -webkit-linear-gradient(-315deg, #1e30f3 0%, #e21e80 100%);
     box-shadow: 2px 2px 6px 1px #383b3f34;
     border-radius: 100px;
     width: 35px;

@@ -42,6 +42,9 @@ header{
 .div-icon div{
     width: 30px;
 }
+#topo{
+    outline: none;
+}
 
 .div-icon div svg{
     width: 100%;
@@ -90,7 +93,6 @@ main{
 .apresentacao{
     transform: translateY(-20px);
     width: calc(45%);
-    /* background-color: yellow; */
 }
 
 
@@ -106,7 +108,7 @@ main{
 } */
 
 .texto-principal .dev p{
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    background: -webkit-linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
     
     display: inline;
 
@@ -135,7 +137,8 @@ main{
     font-size: 4.3rem;
     font-weight: bold;
 
-    background: linear-gradient(172deg, #1e30f3 0%, #e21e80 100%);
+    background: -webkit-linear-gradient(172deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -156,7 +159,6 @@ main{
     font-size: 1.125rem;
     text-decoration: none;
     border-radius: 7px;
-
     transition: .125s ease-in-out;
 }
 
@@ -197,7 +199,7 @@ main{
     border-radius: 5vw;
     width: 32vw;
     height: 32vw;
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    background: -webkit-linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
     position: relative;
 }
 
@@ -276,7 +278,7 @@ footer{
 .res{
     line-height: 1.6rem;
     font-size: 1.2rem;
-    color: #6c757d;
+    color: #34393d;
 }
 
 .redes{
