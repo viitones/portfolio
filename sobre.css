@@ -165,18 +165,19 @@ main h2{
 }
 
 .instituto span{
-    /* color: #1e30f3; */
+    color: #1e30f3;
     font-weight: bold;
     font-size: 1.025rem;
 }
 .instituto p{
+    font-weight: bold;
     font-size: 1.05rem;
     line-height: 1.6rem;
 }
 
 .instituto a{
     text-decoration: none;
-    color: #646b72;
+    color: #34393d;
 }
 
 .materia{
